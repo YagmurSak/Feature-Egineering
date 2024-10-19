@@ -117,11 +117,6 @@ def check_outlier(dataframe, col_name):
     else:
         return False
 
-
-for col in num_cols:
-    print(col, check_outlier(df, col), end="\n\n")
-
-
 for col in num_cols:
     print(col, check_outlier(df, col))
 
@@ -147,10 +142,7 @@ def replace_with_thresholds(dataframe, variable):
 
 for col in num_cols:
     replace_with_thresholds(df, col)
-
-
-for col in num_cols:
-    print(col, check_outlier(df, col))
+    
 
 # Missing Value Analysis
 
